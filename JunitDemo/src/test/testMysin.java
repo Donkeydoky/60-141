@@ -40,5 +40,6 @@ public class testMysin {
 		mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard+" VS Mine:"+mine);
 		assertEquals(standard,mine,0.00000001);
+		
 	}
 }

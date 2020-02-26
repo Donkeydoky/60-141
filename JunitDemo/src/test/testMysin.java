@@ -21,24 +21,25 @@ public class testMysin {
 		double mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard);
 		System.out.println("Mine"+mine);
-		assertEquals(standard,mine,0.00000001);
+		assertEquals(standard,mine,myMath.Precision);
 		
 		angle = Double.POSITIVE_INFINITY;
 		standard = Math.sin(angle);
 		mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard+" VS Mine:"+mine);
-		assertEquals(standard,mine,0.00000001);
+		assertEquals(standard,mine,myMath.Precision);
 		
 		angle = Double.NEGATIVE_INFINITY;
 		standard = Math.sin(angle);
 		mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard+" VS Mine:"+mine);
-		assertEquals(standard,mine,0.00000001);
+		assertEquals(standard,mine,myMath.Precision);
 		
 		angle = 9999999;
 		standard = Math.sin(angle);
 		mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard+" VS Mine:"+mine);
-		assertEquals(standard,mine,0.00000001);
+		assertEquals(standard,mine,myMath.Precision);
+		
 	}
 }

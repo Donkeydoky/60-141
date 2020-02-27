@@ -73,12 +73,8 @@ public class myMath {
 		
 		double sum = 0.0;
 		
-		try {
-			sum = mySin(a)/myCos(a);
-		}catch(Exception e){
+		sum = mySin(a)/myCos(a);
 			
-		}
-		
 		return sum;
 	}
 	

@@ -10,7 +10,7 @@ public class testMytan {
 
 	@Test
 	public void test() throws Exception {
-		double angle = 90;
+		double angle = myMath.PI/2;
 		double standard = Math.tan(angle);
 		double mine = myMath.myTan(angle);
 		System.out.println("Standard:"+standard);

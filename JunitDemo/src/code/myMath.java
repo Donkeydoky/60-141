@@ -71,9 +71,12 @@ public class myMath {
 		//first verison of myTan, 
 		//I tried to use the equation tan(x)=sin(x)/cos(x).
 		
+		if(a == Double.NEGATIVE_INFINITY || !(a < Double.POSITIVE_INFINITY)) {
+            return Double.NaN;
+         } 
 		double sum = 0.0;
+		
 		if(a==PI/2) {
-			System.out.println("myCos = 0");
 			return 1.633123935319537E16;
 		}else if(a==-PI/2) {
 			return -1.633123935319537E16;

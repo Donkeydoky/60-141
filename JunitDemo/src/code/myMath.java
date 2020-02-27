@@ -7,8 +7,9 @@ public class myMath {
 	 *  PI and E respectively.
 	 *  
 	 *  Precision is the minimum difference between 
-	 *  the standard trignometric functions 
-	 *  and my 
+	 *  the standard trignometric functions.
+	 *  Precision is needed since the assertEquals(double,double) is decrypted in Junit4,
+	 *  assertEquals(double,double,delta) is introduced.
 	 */
 	public static final double PI = 3.141592653589793;
 	public static final double E = 2.71828182845904;
@@ -65,33 +66,22 @@ public class myMath {
 	}
 	
 	/**
-	 * 
-	 * @param b- base
-	 * @param e- exponent 
-	 * @return base b to the power of e
-	 */
-	private static int myPow(double b,double e ) {
-		double r = 0;
-
-		return 0;
-	}
-
-	/**
 	 * @param a - an angle, in radian.
 	 * @return the result computing by tangent of a
 	 */
 	public static double myTan(double a) throws Exception{
+		//first verison of myTan, 
+		//I tried to use the equation tan(x)=sin(x)/cos(x).
 		
-		return 0;
+		double sum = 0.0;
+		
+		try {
+			sum = mySin(a)/myCos(a);
+		}catch(Exception e){
+			
+		}
+		
+		return sum;
 	}
 	
-	
-	
-	/**
-	 * @param a - an angle, in radian.
-	 * @return the result computing by Taylor Series function of a
-	 */
-	public static double myTaylorSeries(double a) {
-		return 0;
-	}
 }

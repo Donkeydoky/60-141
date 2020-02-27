@@ -18,7 +18,7 @@ public class testMycos {
 	public void test() {
 		
 		//the parameter of angle in degree
-				double angle = -1;
+				double angle = 0;
 				double standard = Math.cos(angle);
 				double mine = myMath.myCos(angle);
 				System.out.println("Standard:"+standard);
@@ -37,7 +37,7 @@ public class testMycos {
 				System.out.println("Standard:"+standard+" VS Mine:"+mine);
 				assertEquals(standard,mine,myMath.Precision);
 				
-				angle = 9999999;
+				angle = Math.PI/2;
 				standard = Math.cos(angle);
 				mine = myMath.myCos(angle);
 				System.out.println("Standard:"+standard+" VS Mine:"+mine);

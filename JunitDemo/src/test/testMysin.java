@@ -16,14 +16,20 @@ public class testMysin {
 	public void test() {
 		
 		//the parameter of angle in degree
-		double angle = -1;
+		double angle = 0;
 		double standard = Math.sin(angle);
 		double mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard);
-		System.out.println("Mine"+mine);
+		System.out.println("Mine\t:"+mine);
 		assertEquals(standard,mine,myMath.Precision);
 		
 		angle = Double.POSITIVE_INFINITY;
+		standard = Math.sin(angle);
+		mine = myMath.mySin(angle);
+		System.out.println("Standard:"+standard+" VS Mine:"+mine);
+		assertEquals(standard,mine,myMath.Precision);
+		
+		angle = 90;
 		standard = Math.sin(angle);
 		mine = myMath.mySin(angle);
 		System.out.println("Standard:"+standard+" VS Mine:"+mine);
@@ -35,11 +41,7 @@ public class testMysin {
 		System.out.println("Standard:"+standard+" VS Mine:"+mine);
 		assertEquals(standard,mine,myMath.Precision);
 		
-		angle = 9999999;
-		standard = Math.sin(angle);
-		mine = myMath.mySin(angle);
-		System.out.println("Standard:"+standard+" VS Mine:"+mine);
-		assertEquals(standard,mine,myMath.Precision);
+		
 		
 	}
 }

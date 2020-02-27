@@ -42,5 +42,6 @@ public class testMycos {
 				mine = myMath.myCos(angle);
 				System.out.println("Standard:"+standard+" VS Mine:"+mine);
 				assertEquals(standard,mine,myMath.Precision);
+				
 	}
 }

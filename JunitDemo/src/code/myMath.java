@@ -59,12 +59,10 @@ public class myMath {
             if (i % 4 == 0) sum += term;
             if (i % 4 == 2) sum -= term;
         }
-        
-        //System.out.format("The sine of " + a + " is %f",cosine);
-        
-		return sum+1.0;//plus 1 as the Taylor series differs than cos
+ 
+        //plus 1 as the Taylor series differs than cos
+		return sum+1.0;
 	}
-	
 	/**
 	 * @param a - an angle, in radian.
 	 * @return the result computing by tangent of a

@@ -74,6 +74,14 @@ public class testMycos {
 				mine = myMath.myCos(angle);
 				System.out.println("Standard:"+standard+" VS Mine:"+mine);
 				assertEquals(standard,mine,myMath.Precision);
+			
+				//test my degree to radians function
+				angle = 90;
+				standard = Math.cos(Math.toRadians(angle));
+				mine = myMath.myCos(myMath.DegreeToRadians(angle));
+				System.out.println("Standard:"+standard+" VS Mine:"+mine);
+				assertEquals(standard,mine,myMath.Precision);
+				
 				
 	}
 }

@@ -85,5 +85,16 @@ public class myMath {
 			
 		return sum;
 	}
+	/**
+	 * @param take angle in degree as input.
+	 * @return the radians form of angle.
+	 */
+	public static double DegreeToRadians(double a) {
+		if(a == Double.NEGATIVE_INFINITY || !(a < Double.POSITIVE_INFINITY)) {
+            return Double.NaN;
+         } 
+		a *= PI/180;
+		return a;
+	}
 	
 }
